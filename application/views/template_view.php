@@ -11,6 +11,7 @@
         <li><a href="/services">Services</a></li>
         <li><a href="/portfolio">Table</a></li>
         <li><a href="/contacts">Contakts</a></li>
+        <li><a href="/reg">Registration</a></li>
     </ul>
     <div>
         <?php include 'application/views/'.$content_view; ?>

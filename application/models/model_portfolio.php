@@ -19,5 +19,4 @@ class Model_Portfolio extends Model
 
         return $result;
     }
-
 }
