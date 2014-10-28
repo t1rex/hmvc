@@ -1,12 +1,13 @@
 <?php
 
-class Controller_Portfolio extends Controller
+
+class Controller_Portfolio extends Core\Controller
 {
 
     function __construct()
     {
-        $this->model = new Model_Portfolio();
-        $this->view = new View();
+        $this->model = new Models\Model_Portfolio();
+        $this->view = new Core\View();
     }
 
     function action_index()

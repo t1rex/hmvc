@@ -1,4 +1,5 @@
 <?php
+//namespace Core;
 
 // подключаем файлы ядра
 require_once 'core/model.php';

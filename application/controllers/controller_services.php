@@ -1,6 +1,7 @@
 <?php
+//namespace MvcSpace;
 
-class Controller_Services extends Controller
+class Controller_Services extends Core\Controller
 {
 
     function action_index()

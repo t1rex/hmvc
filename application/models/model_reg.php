@@ -1,5 +1,8 @@
 <?php
-class Model_reg extends Model
+namespace Models;
+
+use Core;
+class Model_reg extends Core\Model
 {
 
     public function __construct() {
@@ -7,8 +10,8 @@ class Model_reg extends Model
     }
 
     public function add_user() {
-
-            $sql = 'INSERT INTO users (name, password) VALUE (\'' . $_POST["login"]. '\', \''.$_POST["password"].'\')';
+            $password = crypt($_POST["password"],'$1$salt$');
+            $sql = 'INSERT INTO users (name, password) VALUE (\'' . $_POST["login"]. '\', \''.$password.'\')';
             $this->db->exec($sql);
             return true;
     }

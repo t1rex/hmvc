@@ -1,11 +1,12 @@
 <?php
 
-class Controller_reg extends Controller
+
+class Controller_reg extends Core\Controller
 {
     function __construct()
     {
-        $this->model = new Model_reg();
-        $this->view = new View();
+        $this->model = new Models\Model_reg();
+        $this->view = new Core\View();
     }
     function action_index()
     {
@@ -14,9 +15,6 @@ class Controller_reg extends Controller
             header("Location: http://tinymvc.loc/");
             exit();
         }
-
-//        $model = $this->model;
-//        $this->model->add_user();
         $this->view->generate('reg_view.php', 'template_view.php');
     }
 

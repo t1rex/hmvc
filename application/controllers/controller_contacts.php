@@ -1,10 +1,10 @@
 <?php
 
-class Controller_Contacts extends Controller
+class Controller_Contacts extends Core\Controller
 {
-	
-	function action_index()
-	{
-		$this->view->generate('contacts_view.php', 'template_view.php');
-	}
+
+    function action_index()
+    {
+        $this->view->generate('contacts_view.php', 'template_view.php');
+    }
 }

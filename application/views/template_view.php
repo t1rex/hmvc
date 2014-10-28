@@ -6,7 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-    <ul>
+    <ul style="list-style: none" >
         <li><a href="/">Main</a></li>
         <li><a href="/services">Services</a></li>
         <li><a href="/portfolio">Table</a></li>
@@ -14,7 +14,7 @@
         <li><a href="/reg">Registration</a></li>
     </ul>
     <div>
-        <?php include 'application/views/'.$content_view; ?>
+        <?php include 'application/views/'. $content_view; ?>
     </div>
 </body>
 </html>
