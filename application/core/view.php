@@ -1,32 +1,29 @@
 <?php
 namespace Core;
-
+/**
+ * Class View
+ *
+ * Клас підключає сторінки, отримані з контроллера
+ *
+ * @package Core
+ */
 class View
 {
-
-    //public $template_view; // здесь можно указать общий вид по умолчанию.
-
-    /*
-    $content_file - виды отображающие контент страниц;
-    $template_file - общий для всех страниц шаблон;
-    $data - массив, содержащий элементы контента страницы. Обычно заполняется в модели.
-    */
+    /**
+     * функція
+     *
+     * єдина в класі, інклудить всі необхідні сторінки
+     *
+     * @param $content_view
+     * @param $template_view
+     * @param null $data
+     */
     function generate($content_view, $template_view, $data = null)
     {
-
-        /*
-        if(is_array($data)) {
-
-            // преобразуем элементы массива в переменные
-            extract($data);
+        if (isset($data) && is_string($data)){
+            $partial=$data;
         }
-        */
-
-        /*
-        динамически подключаем общий шаблон (вид),
-        внутри которого будет встраиваться вид
-        для отображения контента конкретной страницы.
-        */
-        include 'application/views/'.$template_view;
+        include 'application/layouts/' . $template_view;
     }
+
 }

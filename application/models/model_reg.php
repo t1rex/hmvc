@@ -2,6 +2,15 @@
 namespace Models;
 
 use Core;
+
+/**
+ * Class Model_reg
+ *
+ * модель для форми реєстарції
+ * просто вставляє імя і пароль нового юзера в базу
+ * при цьому шифруючи пароль
+ * @package Models
+ */
 class Model_reg extends Core\Model
 {
 

@@ -1,6 +1,14 @@
 <?php
 namespace Core;
-
+/**
+ * Class Model
+ *
+ * абстрактний клас всіх моделей
+ * підключається до бази даних в конструкторі
+ *
+ * @author nazar
+ * @package Core
+ */
 abstract class Model
 {
     protected $db = null;

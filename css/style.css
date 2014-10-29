@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    height: 1000px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+
+#header{
+    height: 100px;
+    width: 100%;
+    background-color: coral;
+}
+
+#content{
+    height: 800px;
+    width: 700px;
+    margin: 0 auto;
+    background-color: darkcyan;
+}
+
+.menu li{
+    list-style: none;
+    float: left;
+    margin: 15px;
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+
+#wrapper_simple{
+    height: 1000px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: gold;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 88%;
+    background-color: coral;
+}

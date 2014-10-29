@@ -1,6 +1,12 @@
 <?php
 namespace Core;
-
+/**
+ * Class Controller
+ *
+ * абстрактний клас для всіх контроллерів
+ * створює екземпляр класу View в конструкторі
+ * @package Core
+ */
 abstract class Controller {
 
     public $model;

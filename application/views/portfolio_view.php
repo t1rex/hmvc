@@ -7,7 +7,6 @@
     {
         echo '<tr><td>'.$row['year'].'</td><td>'.$row['syte'].'</td><td>'.$row['description'].'</td></tr>';
     }
-
 ?>
 </table>
 </p>

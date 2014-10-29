@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Class Controller_reg
+ *
+ * контроллер реєстрації
+ * додає імя і пароль в базу і переходить на головну сторінку
+ */
 class Controller_reg extends Core\Controller
 {
     function __construct()
@@ -11,11 +16,11 @@ class Controller_reg extends Core\Controller
     function action_index()
     {
         if (isset($_POST["login"]) && isset($_POST["password"])) {
-            $data = $this->model->add_user();
-            header("Location: http://tinymvc.loc/");
+            $this->model->add_user();
+            $this->view->generate('success_reg.php', 'LayoutSimple.php');
             exit();
         }
-        $this->view->generate('reg_view.php', 'template_view.php');
+        $this->view->generate('reg_view.php', 'LayoutSimple.php');
     }
 
 }
